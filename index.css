@@ -1,9 +1,22 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+ --white:#ffff;
+ --light-grey: #D5E1EF;
+ --dark-navy: #1F314F;
+ --grey:  #7D889E;
 }
 
 body{
-    background-color: #D5E1EF;
+    background-color: var(--light-grey);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,29 +26,30 @@ body{
 }
 
 .contenedor{
-    width: 320px;
-    height: 497px;
-    background-color: white;
-    border-radius: 16px;
-    padding: 16px;
+    width: 32rem;
+    height: 49.7rem;
+    background-color: var(--white);
+    border-radius: 1.6rem;
+    padding: 1.6rem;
 }
 
 .imagen{
-    width: 288px;
-    height: 288px;
-    border-radius: 16px;
+    width: 28.8rem;
+    height: 28.8rem;
+    border-radius: 1.6rem;
 }
 
-.textone{
-    font-size: 22px ;
+.contenedor h1{
+    font-size: 2.2rem;
     font-weight: bold;
     text-align: center;
-    color: #1F314F;
+    color:var(--dark-navy) ;
+    margin: 2rem 0 2rem 0;
 }
 
-.texttwo{
-    font-size: 17px ;
+.contenedor p{
+    font-size: 1.7rem;
     text-align: center;
-    color: #7D889E;
+    color:var(--grey);
 
 }
